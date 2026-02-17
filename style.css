@@ -1,0 +1,491 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background:black;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:black;
+    border-bottom:1px solid #0a84ff;
+}
+
+.logo{
+    color:#0a84ff;
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin:0 20px;
+    cursor:pointer;
+}
+
+nav ul li:hover{
+    color:#0a84ff;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
+}
+
+.card{
+    background:#071a36;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 35px rgba(10,132,255,0.6);
+}
+
+/* PHOTO */
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:4px solid #0a84ff;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+.subtitle{
+    color:#0a84ff;
+    margin-top:10px;
+}
+
+/* BUTTONS */
+.buttons{
+    margin-top:20px;
+}
+
+.btn{
+    background:#0a84ff;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    margin:8px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0066ff;
+}
+
+/* ABOUT SECTION */
+.about-section{
+    padding:70px 0;
+    display:flex;
+    justify-content:center;
+    background:black;
+}
+
+/* SAME SIZE AS SKILLS CARD */
+.about-box{
+    width:100%;                     
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(10,132,255,0.5);
+}
+
+/* HEADING */
+.about-box h2{
+    color:#0a84ff;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+.about-box p{
+    font-size:17px;
+    line-height:1.6;
+    color:white;
+    max-width:900px;
+    margin:auto;
+}
+
+/* SKILLS */
+#skills{
+    padding:70px 0;
+}
+
+.skills-card{
+    width:100%;
+    margin:auto;
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:40px 20px;
+    box-shadow:0 0 30px rgba(10,132,255,0.5);
+}
+
+.skill-title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0a84ff;
+    font-size:32px;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.skill-box{
+    background:#06142b;
+    width:120px;
+    height:120px;
+    border-radius:18px;
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+}
+
+.skill-box img{
+    width:35px;   /* SMALL ICON */
+    height:35px;
+    margin-bottom:10px;
+}
+
+.skill-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #0a84ff;
+}
+
+ /* PROJECT SECTION */
+.project-section{
+    padding:80px 0;
+    display:flex;
+    justify-content:center;
+    background:black;
+}
+
+/* OUTER BOX */
+.project-scroll-box{
+    width:100%;
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:40px 25px;
+    box-shadow:0 0 30px rgba(10,132,255,0.5);
+    overflow:hidden;
+}
+
+/* HEADING */
+.project-heading{
+    text-align:center;
+    color:#0a84ff;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.project-sub{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:35px;
+}
+
+/* SCROLL AREA */
+.project-scroll{
+    display:flex;
+    gap:35px;
+    overflow-x:auto;      /* horizontal scroll */
+    scroll-behavior:smooth;
+    padding-bottom:10px;
+}
+
+/* hide scrollbar */
+.project-scroll::-webkit-scrollbar{
+    display:none;
+}
+
+/* PROJECT CARD */
+.project-card{
+    min-width:280px;
+    height:260px;
+    background:#061a3a;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 0 18px rgba(10,132,255,0.2);
+    flex-shrink:0;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 35px rgba(10,132,255,0.8);
+}
+
+/* IMAGE */
+.project-card img{
+    width:55px;
+    height:55px;
+    margin-bottom:12px;
+}
+
+/* TEXT */
+.project-card h3{
+    color:white;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    color:#ccc;
+    font-size:14px;
+}
+
+.project-scroll a{
+    text-decoration:none;
+}
+
+/* EDUCATION SECTION */
+.education-section{
+    padding:70px 0;
+    background:black;
+    display:flex;
+    justify-content:center;
+}
+
+/* OUTER BOX SAME AS SKILLS & PROJECT */
+.education-outer{
+    width:100%;                 /* SAME WIDTH */
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:50px 20px;
+    box-shadow:0 0 30px rgba(10,132,255,0.5);
+    margin:auto;               /* CENTER ALIGN */
+}
+
+/* HEADING */
+.education-title{
+    text-align:center;
+    color:#0a84ff;
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+/* CARD CONTAINER */
+.education-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+/* CARD */
+.edu-card{
+    background:#061a35;
+    padding:35px 25px;
+    width:300px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(10,132,255,0.3);
+    transition:0.3s;
+}
+
+.edu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 40px rgba(10,132,255,0.8);
+}
+
+/* LOGO */
+.edu-logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    background:white;
+    padding:8px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+.edu-card h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.edu-card p{
+    color:#ccc;
+    margin-bottom:8px;
+}
+
+.edu-card span{
+    color:#0a84ff;
+    font-weight:bold;
+}
+/* CERTIFICATE SECTION */
+.cert-section{
+    padding:80px 0;
+    display:flex;
+    justify-content:center;
+    background:black;
+}
+
+/* OUTER BOX */
+.cert-outer{
+    width:100%;
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:40px 25px;
+    box-shadow:0 0 30px rgba(10,132,255,0.5);
+}
+
+/* TITLE */
+.cert-title{
+    text-align:center;
+    color:#0a84ff;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+/* SCROLL BOX */
+.cert-scroll-box{
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+
+/* HIDE SCROLL BAR */
+.cert-scroll-box::-webkit-scrollbar{
+    display:none;
+}
+
+/* SCROLL CONTAINER */
+.cert-scroll{
+    display:flex;
+    gap:40px;
+    width:max-content;
+}
+
+/* CARD */
+.cert-card{
+    min-width:260px;
+    height:180px;
+    background:#061a35;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(59,130,246,0.2);
+}
+
+/* HOVER */
+.cert-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 35px rgba(59,130,246,0.8);
+}
+
+/* ICON */
+.cert-icon{
+    width:55px;
+    height:55px;
+    margin-bottom:12px;
+}
+
+/* TEXT */
+.cert-card h3{
+    color:white;
+    font-size:18px;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    padding:90px 0;
+    background:black;
+    display:flex;
+    justify-content:center;
+}
+
+/* OUTER BOX */
+.contact-outer{
+    width:100%;
+    border:2px solid #0a84ff;
+    border-radius:25px;
+    padding:50px 30px;
+    box-shadow:0 0 35px rgba(10,132,255,0.5);
+    text-align:center;
+}
+
+/* TITLE */
+.contact-title{
+    color:#0a84ff;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.contact-sub{
+    color:#aaa;
+    margin-bottom:40px;
+}
+
+/* GRID */
+.contact-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* CARD */
+.contact-card{
+    width:220px;
+    background:#06142b;
+    padding:30px 20px;
+    border-radius:18px;
+    transition:0.4s;
+    text-align:center;
+}
+
+.contact-card img{
+    width:45px;
+    margin-bottom:12px;
+}
+
+.contact-card h3{
+    color:white;
+    margin-bottom:8px;
+}
+
+.contact-card p{
+    color:#bbb;
+    font-size:14px;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px #0a84ff;
+}
+

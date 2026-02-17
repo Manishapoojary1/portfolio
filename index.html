@@ -1,98 +1,309 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Manisha P Poojary Portfolio</title>
-
-    <style>
-        body{
-            font-family: Arial;
-            margin:0;
-            background:#0f172a;
-            color:white;
-        }
-        header{
-            background:black;
-            padding:25px;
-            text-align:center;
-        }
-        section{
-            padding:40px;
-        }
-        h1,h2{
-            color:#38bdf8;
-        }
-        .box{
-            background:#020617;
-            padding:20px;
-            margin:15px 0;
-            border-radius:12px;
-        }
-        footer{
-            text-align:center;
-            padding:20px;
-            background:black;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Manisha P Poojary</h1>
-    <p>MCA Final Year | Software Developer | Data Analyst</p>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Portfolio</h2>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skill</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#certificate">Certificate</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 
-<section>
+</nav>
 
-    <h2>About Me</h2>
-    <div class="box">
-        MCA final-year student with experience in full-stack development, Python and AI projects.
-        Passionate about building real-world software solutions.
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="card">
+
+        <!-- CLICKABLE PHOTO -->
+        <a href="https://github.com/Manishapoojary1" target="_blank">
+            <img src="image/Photo.jpg" class="profile">
+        </a>
+
+        <h1>Hi, I'm Manisha P Poojary</h1>
+        <h3 class="subtitle">MCA Final Year Student | Aspiring Software Developer   </h3>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <!-- GitHub -->
+            <a href="https://github.com/Manishapoojary1" target="_blank">
+                <button class="btn">GitHub</button>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/manisha-p-poojary-4b7337361" target="_blank">
+                <button class="btn">LinkedIn</button>
+            </a>
+
+            <!-- RESUME DOWNLOAD -->
+            <a href="resume.pdf" download="Manisha_Poojary_Resume.pdf">
+                <button class="btn">Download Resume</button>
+            </a>
+
+        </div>
     </div>
-
-    <h2>Skills</h2>
-    <div class="box">
-        <b>Languages:</b> Python, Java, C, JavaScript, PHP <br><br>
-        <b>Web:</b> HTML, CSS, React, Node.js <br><br>
-        <b>Database:</b> MySQL, MongoDB <br><br>
-        <b>Tools:</b> TensorFlow, OpenCV, Flask, Git
-    </div>
-
-    <h2>Projects</h2>
-
-    <div class="box">
-        <b>AI Sign Language Translator</b><br>
-        Built using Python, TensorFlow & OpenCV for real-time gesture recognition.
-    </div>
-
-    <div class="box">
-        <b>Secure Authentication System</b><br>
-        MERN stack login system with OTP and JWT authentication.
-    </div>
-
-    <div class="box">
-        <b>Employee Management System</b><br>
-        Flask-based CRUD web application.
-    </div>
-
-    <h2>Internships</h2>
-    <div class="box">
-        React.js Intern – CodeLab Systems<br>
-        Full Stack Intern – Prodigy InfoTech
-    </div>
-
-    <h2>Contact</h2>
-    <div class="box">
-        📧 manishakoluvail@gmail.com <br>
-        📞 7795216931 <br>
-        📍 Mangalore
-    </div>
-
 </section>
 
-<footer>
-    © 2026 Manisha Portfolio
-</footer>
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>
+                Aspiring full-stack web developer with hands-on experience in Spring Boot,
+                 React.js, Node.js, and MySQL. Passionate about building scalable, secure,
+                 and people-centered solutions. Eager to contribute to real-world software
+                projects with strong problem-solving and collaborative skills.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+    <div class="container">
+
+    <div class="skills-card">
+
+        <!-- HEADING INSIDE CARD -->
+        <h2 class="skill-title">Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+                <p>Python</p>
+            </div>
+
+        
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                <p>CSS</p>
+            </div>
+
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png">
+                <p>React</p>
+            </div>
+
+            <div class="skill-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png">
+                <p>MySQL</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- PROJECT -->
+<section class="project-section" id="project">
+    <!-- OUTER BLUE CARD -->
+     <div class="container">
+    <div class="project-scroll-box">
+
+        <!-- HEADING INSIDE BOX -->
+        <h2 class="project-heading">Projects</h2>
+        <p class="project-sub">Here are some of my recent works:</p>
+
+        <!-- SCROLL CONTAINER -->
+        <div class="project-scroll">
+
+            <!-- PROJECT 1 -->
+            <a href="https://github.com/Manishapoojary1/AI-Driven-Sign-Language-Translation" target="_blank">
+                <div class="project-card">
+                    <img src="image/ai.jpg">
+                    <h3>AI Driven Sign Language Translator</h3>
+                    <p>Real-time hand gesture recognition using Python, TensorFlow & OpenCV.</p>
+                </div>
+            </a>
+
+            <!-- PROJECT 2 -->
+            <a href="https://github.com/Manishapoojary1/User_auth" target="_blank">
+                <div class="project-card">
+                    <img src="image/auth.jpg">
+                    <h3>Authentication System</h3>
+                    <p>Secure MERN login with OTP, JWT authentication and database security.</p>
+                </div>
+            </a>
+
+            <!-- PROJECT 3 -->
+            <a href="https://github.com/Manishapoojary1/employee_mgmt" target="_blank">
+                <div class="project-card">
+                    <img src="image/emp.jpg">
+                    <h3>Employee Management</h3>
+                    <p>Flask-based employee CRUD system with database integration.</p>
+                </div>
+            </a>
+
+            <!-- PROJECT 4 -->
+            <a href="https://github.com/Manishapoojary1/qr-code-upload-scan-system" target="_blank">
+                <div class="project-card">
+                    <img src="image/QR.jpg">
+                    <h3>QR Code Scanner</h3>
+                    <p>Upload and scan QR codes with secure data extraction and validation.</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education-section">
+<div class="container">
+    <div class="education-outer">
+
+        <h2 class="education-title">Education</h2>
+
+        <div class="education-container">
+
+            <!-- MCA -->
+            <div class="edu-card">
+                <img src="image/nitte.jpg" class="edu-logo">
+                <h3>Master of Computer Application</h3>
+                <p>NMAM Institute of Technology, Nitte</p>
+                <span>2024 – 2026</span>
+            </div>
+
+            <!-- BCA -->
+            <div class="edu-card">
+                <img src="image/vijaya.jpg" class="edu-logo">
+                <h3>Bachelor of Computer Application</h3>
+                <p>Vijaya College, Mulki</p>
+                <span>2021 – 2024</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+  <section class="cert-section" id="certificate">
+ <div class="container">
+    <div class="cert-outer">
+        <h2 class="cert-title">Certifications</h2>
+
+        <div class="cert-scroll-box">
+            <div class="cert-scroll">
+
+                <!-- Cloud -->
+                <a href="certificates/Cloude_computing.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/cloud.jpg" class="cert-icon">
+                        <h3>Cloud Computing</h3>
+                    </div>
+                </a>
+
+                <!-- Data ML -->
+                <a href="certificates/Data_Analysis.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/data.jpg" class="cert-icon">
+                        <h3>Data Analysis & ML</h3>
+                    </div>
+                </a>
+
+
+                <!-- Flutter -->
+                <a href="certificates/Flutter.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/flutter.png" class="cert-icon">
+                        <h3>Flutter</h3>
+                    </div>
+                </a>
+
+
+                <!-- Research -->
+                <a href="certificates/Resarch.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/research.jpg" class="cert-icon">
+                        <h3>Research Methodology</h3>
+                    </div>
+                </a>
+
+                <!-- Prodigy -->
+                <a href="certificates/Prodigy.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/Prodigy.jpg" class="cert-icon">
+                        <h3>Prodigy Internship</h3>
+                    </div>
+                </a>
+                <!-- Deloitte -->
+                <a href="certificates/Deloitte.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/deloitte.png" class="cert-icon">
+                        <h3>Deloitte</h3>
+                    </div>
+                </a>
+
+                <a href="certificates/Bootcamp.pdf" target="_blank">
+                    <div class="cert-card">
+                        <img src="image/bootcamp.jpg" class="cert-icon">
+                        <h3>Bootcamp</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+
+ <div class="container">
+    <div class="contact-outer">
+
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="contact-sub">Feel free to connect with me anytime</p>
+
+        <div class="contact-container">
+
+            <!-- EMAIL -->
+            <div class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+                <h3>Email</h3>
+                <p>manishakoluvail@gmail.com</p>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
+                <h3>Phone</h3>
+                <p>7795216931</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+ 
+</section>
 
 </body>
 </html>
